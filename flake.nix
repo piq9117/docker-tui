@@ -26,8 +26,9 @@
         };
 
         tie = final.hsPkgs.callCabal2nix "tie" (builtins.fetchGit {
-          url = "git@github.com:scarf-sh/tie.git";
-          rev = "e119add145f4e1cc13a870358f45606ced9ed06c";
+          url = "git@github.com:piq9117/tie.git";
+          rev = "878f1b6b9818ea4f611f807ebcb82f0315d88494";
+          ref = "add-media-type";
         }) {};
 
         generate-api = final.writeScriptBin "generate-api" ''
